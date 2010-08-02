@@ -61,6 +61,8 @@ class Capybara::Driver::Selenium < Capybara::Driver::Base
       native.click
     end
 
+    alias :click! :click
+
     def drag_to(element)
       native.drag_and_drop_on(element.native)
     end

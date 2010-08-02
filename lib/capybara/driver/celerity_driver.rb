@@ -53,6 +53,8 @@ class Capybara::Driver::Celerity < Capybara::Driver::Base
       native.click
     end
 
+    alias :click! :click
+
     def drag_to(element)
       native.fire_event('mousedown')
       element.native.fire_event('mousemove')

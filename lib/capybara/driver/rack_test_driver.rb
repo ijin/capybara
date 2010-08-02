@@ -88,6 +88,8 @@ class Capybara::Driver::RackTest < Capybara::Driver::Base
       end
     end
 
+    alias :click! :click
+
     def tag_name
       native.node_name
     end

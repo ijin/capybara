@@ -136,7 +136,7 @@ module Capybara
     # Click the Element
     #
     def click
-      base.click
+      base.click!
     end
 
     ##
